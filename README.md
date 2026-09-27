@@ -2,9 +2,6 @@
 
 Sistem kontrol otomatisasi berbasis Arduino Nano yang dirancang untuk memonitor beban muatan pada gerobak komersial atau industri secara waktu nyata (real-time). Proyek ini berfokus pada akurasi pembacaan data sensor, mitigasi noise mekanis, dan manajemen daya, menjadikannya solusi yang tangguh untuk lingkungan operasional fisik.
 
-## Ikhtisar Proyek
-Keterbatasan dokumentasi visual pada repositori ini diimbangi dengan arsitektur sistem yang dirancang secara matang. Sistem ini mengintegrasikan sensor regangan (strain-gauge load cell) dengan konverter Analog-to-Digital HX711 24-bit untuk mendeteksi perubahan massa mikroskopis. Data yang diproses kemudian dievaluasi menggunakan algoritma komparasi bersarang untuk memicu respons aktuator berupa indikator peringatan visual dan audio bertegangan tinggi (12V) melalui isolasi relay.
-
 ## Fitur Teknis Utama
 * **Pemrosesan Sinyal Presisi:** Menggunakan modul ADC HX711 24-bit untuk membaca fluktuasi tegangan diferensial dari sensor beban dengan tingkat presisi tinggi.
 * **Mitigasi Noise (Data Smoothing):** Menerapkan algoritma pengambilan rata-rata dari 15 sampel data (sampling) secara terus-menerus untuk meredam lonjakan nilai (spike) yang disebabkan oleh getaran mekanis atau interferensi elektromagnetik pada perangkat keras.
