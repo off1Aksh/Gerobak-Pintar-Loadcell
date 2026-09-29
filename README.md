@@ -37,6 +37,22 @@ Pengendalian aktuator menggunakan konfigurasi Active LOW, di mana pemberian siny
 ## Metodologi Kalibrasi dan Stabilitas Sistem
 Nilai kalibrasi pada sistem ini diperoleh melalui proses pengukuran empiris dengan beban referensi standar. Nilai hambatan pada kabel sensor diverifikasi menggunakan ohmmeter untuk mengidentifikasi jalur eksitasi dan sinyal secara akurat, mengatasi inkonsistensi standar warna kabel pabrikan. Arsitektur kode dirancang untuk menginisialisasi semua pin relay pada kondisi `HIGH` sebelum modul utama diaktifkan. Algoritma inisialisasi ini merupakan langkah mitigasi krusial untuk mencegah penarikan arus masif (brownout) saat sistem melakukan booting awal.
 
+## Diagram Rangkaian Sistem
+
+Sistem ini ditenagai oleh Aki 12V yang didistribusikan ke berbagai komponen. Modul *Step-Down* DC-DC digunakan untuk menurunkan tegangan menjadi 5V guna menyuplai Arduino Nano, Sensor Load Cell (via HX711), dan Layar LCD. Modul Relay 4-Channel bertugas mengatur aktuasi *Pilot Lamp* dan *Buzzer* berdasarkan ambang batas berat yang terbaca.
+
+![Diagram Rangkaian Gerobak Pintar](images/diagram-rangkaian.png)
+
+## Dokumentasi Proyek
+
+Berikut adalah proses instalasi kelistrikan di dalam panel kontrol dan hasil akhir purwarupa Gerobak Pintar yang siap digunakan.
+
+<div align="center">
+  <img src="images/dokumentasi-perakitan.jpeg" alt="Proses Perakitan Panel Kontrol" width="45%">
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="images/dokumentasi-hasil.jpeg" alt="Hasil Akhir Gerobak Pintar" width="45%">
+</div>
+
 ---
 **Pengembang:** Akasha Bin Ali | M. Zakky Ikhsanudin
 *Proyek implementasi sistem kontrol otomatisasi perangkat keras - Mahasiswa Teknologi Rekayasa Komputer.*
