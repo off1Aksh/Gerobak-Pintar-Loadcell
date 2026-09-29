@@ -41,16 +41,16 @@ Nilai kalibrasi pada sistem ini diperoleh melalui proses pengukuran empiris deng
 
 Sistem ini ditenagai oleh Aki 12V yang didistribusikan ke berbagai komponen. Modul *Step-Down* DC-DC digunakan untuk menurunkan tegangan menjadi 5V guna menyuplai Arduino Nano, Sensor Load Cell (via HX711), dan Layar LCD. Modul Relay 4-Channel bertugas mengatur aktuasi *Pilot Lamp* dan *Buzzer* berdasarkan ambang batas berat yang terbaca.
 
-![Diagram Rangkaian Gerobak Pintar](images/diagram-rangkaian.png)
+![Diagram Rangkaian Gerobak Pintar](diagram-rangkaian.png)
 
 ## Dokumentasi Proyek
 
 Berikut adalah proses instalasi kelistrikan di dalam panel kontrol dan hasil akhir purwarupa Gerobak Pintar yang siap digunakan.
 
 <div align="center">
-  <img src="images/dokumentasi-perakitan.jpeg" alt="Proses Perakitan Panel Kontrol" width="45%">
+  <img src="dokumentasi-perakitan.jpeg" alt="Proses Perakitan Panel Kontrol" width="45%">
   &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="images/dokumentasi-hasil.jpeg" alt="Hasil Akhir Gerobak Pintar" width="45%">
+  <img src="dokumentasi-hasil.jpeg" alt="Hasil Akhir Gerobak Pintar" width="45%">
 </div>
 
 ---
